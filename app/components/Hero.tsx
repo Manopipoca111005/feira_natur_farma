@@ -4,25 +4,24 @@ export default function Hero() {
     return (
         <section
             id="inicio"
-            className="relative flex flex-col items-center justify-center min-h-[60vh] py-24 px-4 text-center overflow-hidden bg-gradient-to-br from-green-300 via-green-100 to-green-50"
+            className="relative flex flex-col items-center justify-center min-h-[80vh] py-24 px-4 text-center overflow-hidden bg-gradient-to-br from-green-900 via-green-700 to-green-500"
         >
-            <div className="absolute inset-0 pointer-events-none select-none opacity-30 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-400 via-green-200 to-transparent" />
-            <div className="relative z-10 max-w-2xl mx-auto">
-                <h1 className="text-5xl md:text-6xl font-extrabold text-green-900 leading-tight">
+            <div className="absolute inset-0 pointer-events-none select-none opacity-60 bg-black" />
+            <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center animate-fade-in">
+                <h1 className="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg mb-6 leading-tight">
                     Feira Natur Farma
                 </h1>
-                <h2 className='text-green-700 font-semibold'>Saúde Natural em Harmonia com a Natureza</h2>
-                <br />
-                <span className="text-green-700">
+                <h2 className='text-white font-semibold text-2xl md:text-3xl mb-4 drop-shadow'>Saúde Natural em Harmonia com a Natureza</h2>
+                <span className="text-white text-lg md:text-xl mb-8 block drop-shadow">
                     Há 23 anos cuidando da comunidade com terapias integrativas e produtos naturais em Santa Maria da Feira
                 </span>
+                <a
+                    href="#contactos"
+                    className="inline-block px-10 py-4 rounded-full bg-white text-green-900 font-bold text-xl shadow-xl hover:bg-green-200 transition-colors duration-200 border-2 border-green-300"
+                >
+                    Agende sua consulta
+                </a>
             </div>
-            <a
-                href="/contactos"
-                className="inline-block px-8 py-3 rounded-full bg-green-800 text-white font-semibold text-lg shadow-lg hover:bg-green-900 transition-colors duration-200"
-            >
-                Agende sua consulta
-            </a>
         </section>
     );
 }

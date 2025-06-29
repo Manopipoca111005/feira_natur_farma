@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function Rodape() {
   return (
-    <footer className="bg-green-900 text-green-50 py-8 px-4 mt-0 w-full flex-shrink-0">
+    <footer className="bg-green-900 text-green-50 py-8 px-4 mt-0 w-full flex-shrink-0
+      md:static md:relative fixed bottom-0 left-0 z-40 md:z-auto md:rounded-none rounded-t-2xl shadow-lg md:shadow-none">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="mb-2 md:mb-0">
           <p className="italic">"Na Feira Natur Farma, sua jornada rumo ao equilíbrio é nossa maior inspiração" <span role="img" aria-label="folha">🌱</span></p>
